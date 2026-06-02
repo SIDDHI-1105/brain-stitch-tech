@@ -3,4 +3,4 @@ services:
     name: brain-stitch-tech-ai
     env: node
     buildCommand: bun install && bun run build
-    startCommand: node .output/server/index.mjs
+    startCommand: bun run start
