@@ -19,9 +19,29 @@ export function KnowledgeGraph() {
 
   const byId = Object.fromEntries(nodes.map((n) => [n.id, n]));
 
+  const particles = Array.from({ length: 10 });
+
   return (
     <div className="relative aspect-square w-full max-w-[500px]">
       <div className="absolute inset-0 radial-purple animate-pulse-glow" />
+
+      {/* Floating particles */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        {particles.map((_, i) => (
+          <span
+            key={i}
+            className="particle"
+            style={{
+              left: `${10 + (i * 9) % 80}%`,
+              bottom: `${10 + (i * 13) % 30}%`,
+              animationDelay: `${(i * 0.6) % 6}s`,
+              animationDuration: `${5 + (i % 4)}s`,
+              opacity: 0.5,
+            }}
+          />
+        ))}
+      </div>
+
       <svg viewBox="0 0 400 400" className="relative h-full w-full">
         <defs>
           <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
@@ -51,27 +71,28 @@ export function KnowledgeGraph() {
               strokeOpacity="0.3"
               strokeWidth="1"
             >
-              <animate attributeName="stroke-opacity" values="0.15;0.5;0.15" dur={`${3 + i * 0.2}s`} repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity" values="0.15;0.55;0.15" dur={`${3 + i * 0.2}s`} repeatCount="indefinite" />
             </line>
           );
         })}
 
         {nodes.map((n, i) => (
-          <g key={n.id} filter="url(#glow)">
+          <g key={n.id} filter="url(#glow)" className="transition-all hover:opacity-100">
             <circle
               cx={n.x} cy={n.y} r={n.r}
               fill={n.primary ? "url(#coreGrad)" : "url(#nodeGrad)"}
               opacity={n.primary ? 1 : 0.85}
             >
-              <animate attributeName="r" values={`${n.r};${n.r + 2};${n.r}`} dur={`${2.5 + i * 0.3}s`} repeatCount="indefinite" />
+              <animate attributeName="r" values={`${n.r};${n.r + 2.5};${n.r}`} dur={`${2.5 + i * 0.3}s`} repeatCount="indefinite" />
             </circle>
             {n.label && (
               <text
                 x={n.x} y={n.y + n.r + 14}
                 textAnchor="middle"
-                fill="rgba(255,255,255,0.6)"
+                fill="rgba(255,255,255,0.65)"
                 fontSize="10"
-                fontFamily="Inter, sans-serif"
+                fontFamily="Sora, Inter, sans-serif"
+                letterSpacing="0.5"
               >
                 {n.label}
               </text>

@@ -1,12 +1,12 @@
 export function TrustStrip() {
-  const labels = ["Founders", "Creators", "Researchers", "Writers", "Engineers", "Thinkers"];
+  const labels = ["Founders", "Creators", "Researchers", "Writers", "Engineers", "Operators"];
   return (
-    <section className="border-y border-border/50 py-10">
-      <div className="mx-auto max-w-6xl px-6 text-center">
-        <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          Built for founders, creators, and thinkers
+    <section className="border-y border-border/50 py-8">
+      <div className="container-page text-center">
+        <p className="font-label text-xs uppercase tracking-[0.2em] text-muted-foreground">
+          Trusted by people who think out loud
         </p>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm font-display font-medium text-muted-foreground/70">
+        <div className="mt-5 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 font-label text-sm font-medium text-muted-foreground/70">
           {labels.map((l) => (
             <span key={l} className="transition hover:text-foreground">{l}</span>
           ))}

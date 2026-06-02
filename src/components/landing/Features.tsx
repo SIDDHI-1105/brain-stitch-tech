@@ -1,23 +1,24 @@
 import { Mic, Sparkles, Network, ListChecks } from "lucide-react";
 
 const features = [
-  { icon: Mic, title: "Voice capture", desc: "Speak naturally. Background-quality transcription in 40+ languages." },
-  { icon: Sparkles, title: "Auto organization", desc: "AI tags, categorizes, and routes every thought without lifting a finger." },
-  { icon: Network, title: "Knowledge graph", desc: "See how your ideas connect. Discover patterns you didn't know existed." },
-  { icon: ListChecks, title: "Task extraction", desc: "Action items surface automatically — synced to your calendar and tools." },
+  { icon: Mic, title: "Voice capture", desc: "Speak naturally. Studio-grade voice note transcription in 40+ languages, on-device when possible." },
+  { icon: Sparkles, title: "Auto organization", desc: "AI tags, categorizes, and routes every thought — no folders, no manual sorting." },
+  { icon: Network, title: "Knowledge graph", desc: "See how your ideas connect. Surface patterns and resurface old thoughts at the perfect moment." },
+  { icon: ListChecks, title: "Task extraction", desc: "Action items surface automatically and sync to your calendar, Todoist, Notion, and Linear." },
 ];
 
 export function Features() {
   return (
-    <section id="features" className="py-[100px]">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="features" className="section">
+      <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
+          <p className="eyebrow">Features</p>
+          <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
             Everything you need to <span className="text-gradient">think clearly</span>
           </h2>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 stagger">
           {features.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="glass glass-hover rounded-2xl p-8">
               <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary/15 text-primary-glow">
