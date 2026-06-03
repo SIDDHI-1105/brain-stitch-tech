@@ -1,4 +1,4 @@
-import { EmailCapture } from "@/components/EmailCapture";
+import { Calendar } from "lucide-react";
 
 export function FinalCTA() {
   return (
@@ -13,10 +13,25 @@ export function FinalCTA() {
           <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
             Build a second brain that thinks alongside you. Early users get lifetime perks.
           </p>
-          <div className="mt-8 flex justify-center">
-            <EmailCapture />
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <a
+              href="https://forms.gle/ZwecTxfx7aS5heS88"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary rounded-full px-6 py-3 text-sm font-medium"
+            >
+              Get Early Access
+            </a>
+            <a
+              href="https://calendly.com/shivam164pandey/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium"
+            >
+              <Calendar size={16} strokeWidth={2} />
+              Schedule a Call
+            </a>
           </div>
-          <p className="mt-3 font-label text-xs text-muted-foreground">No spam · Unsubscribe anytime</p>
         </div>
       </div>
     </section>
