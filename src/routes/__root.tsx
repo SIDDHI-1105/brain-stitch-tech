@@ -87,8 +87,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "weave_brain.ai" },
       { name: "twitter:description", content: "Idea Weaver AI captures your spoken thoughts and transforms them into organized notes, tasks, and a connected knowledge graph." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4a994f33-39b4-419c-b232-c3249596e156/id-preview-4fe1932b--f4194a4b-1705-4837-bcde-c25e014ba5ac.lovable.app-1780422701205.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4a994f33-39b4-419c-b232-c3249596e156/id-preview-4fe1932b--f4194a4b-1705-4837-bcde-c25e014ba5ac.lovable.app-1780422701205.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/LJDBwNVqCOVN4pzvB5bp92k42vu1/social-images/social-1780506919941-ChatGPT_Image_Jun_3,_2026,_10_39_40_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/LJDBwNVqCOVN4pzvB5bp92k42vu1/social-images/social-1780506919941-ChatGPT_Image_Jun_3,_2026,_10_39_40_PM.webp" },
     ],
     links: [
       {
