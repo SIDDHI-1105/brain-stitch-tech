@@ -1,10 +1,12 @@
+import weaveLogo from "@/assets/weave-logo.png.asset.json";
+
 export function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="container-page mt-3">
         <div className="flex h-16 items-center justify-between rounded-2xl glass px-5">
           <a href="#" className="flex items-center gap-2 font-display text-lg font-semibold">
-            <span className="inline-block h-6 w-6 rounded-md bg-gradient-to-br from-primary to-primary-glow purple-glow" />
+            <img src={weaveLogo.url} alt="Weave logo" style={{ height: 36, width: "auto" }} />
             Weave
           </a>
           <nav className="hidden gap-8 font-label text-sm text-muted-foreground md:flex">
