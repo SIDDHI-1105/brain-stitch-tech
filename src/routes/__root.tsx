@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "weave_brain.ai" },
+      { name: "description", content: "Idea Weaver AI captures your spoken thoughts and transforms them into organized notes, tasks, and a connected knowledge graph." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "weave_brain.ai" },
+      { property: "og:description", content: "Idea Weaver AI captures your spoken thoughts and transforms them into organized notes, tasks, and a connected knowledge graph." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "weave_brain.ai" },
+      { name: "twitter:description", content: "Idea Weaver AI captures your spoken thoughts and transforms them into organized notes, tasks, and a connected knowledge graph." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4a994f33-39b4-419c-b232-c3249596e156/id-preview-4fe1932b--f4194a4b-1705-4837-bcde-c25e014ba5ac.lovable.app-1780422701205.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4a994f33-39b4-419c-b232-c3249596e156/id-preview-4fe1932b--f4194a4b-1705-4837-bcde-c25e014ba5ac.lovable.app-1780422701205.png" },
     ],
     links: [
       {
