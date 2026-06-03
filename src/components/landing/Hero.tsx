@@ -1,4 +1,3 @@
-import { EmailCapture } from "@/components/EmailCapture";
 import { KnowledgeGraph } from "@/components/KnowledgeGraph";
 
 export function Hero() {
@@ -20,8 +19,14 @@ export function Hero() {
             Speak your thoughts. Weave automatically turns them into organized notes, tasks, and an interconnected second brain.
           </p>
           <div className="mt-8">
-            <EmailCapture />
-            <p className="mt-3 font-label text-xs text-muted-foreground">No spam · Unsubscribe anytime · Beta seats limited</p>
+            <a
+              href="https://forms.gle/ZwecTxfx7aS5heS88"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-block rounded-full px-6 py-3 text-sm font-medium"
+            >
+              Get Early Access
+            </a>
           </div>
           <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 font-label text-xs uppercase tracking-[0.18em] text-muted-foreground/80">
             <span>AI note taking</span>
