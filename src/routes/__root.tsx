@@ -87,8 +87,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "weave_brain.ai" },
       { name: "twitter:description", content: "Idea Weaver AI captures your spoken thoughts and transforms them into organized notes, tasks, and a connected knowledge graph." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/LJDBwNVqCOVN4pzvB5bp92k42vu1/social-images/social-1780506919941-ChatGPT_Image_Jun_3,_2026,_10_39_40_PM.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/LJDBwNVqCOVN4pzvB5bp92k42vu1/social-images/social-1780506919941-ChatGPT_Image_Jun_3,_2026,_10_39_40_PM.webp" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/d0ff57f4-e960-42f5-a779-53741d4cb3bc" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/d0ff57f4-e960-42f5-a779-53741d4cb3bc" },
     ],
     links: [
       {
